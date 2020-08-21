@@ -5,7 +5,7 @@ int swap_bits(unsigned int n)
     int pos_e,pos_r;
     unsigned int bit1, bit2,x, result;
 
-   for(pos_e=2,pos_r=1;pos_e<32;pos_e=pos_e+2, pos_r=pos_r+2){
+   for(pos_e=1,pos_r=0;pos_e<32;pos_e=pos_e+2, pos_r=pos_r+2){
 
     bit1 =  (n >> pos_e) & 1;
     bit2 =  (n >> pos_r) & 1;
